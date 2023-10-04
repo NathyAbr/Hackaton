@@ -5,6 +5,27 @@ body {
     margin: 0;
     padding: 0;
 }
+.navbar {
+    background: linear-gradient(#94e4ff, #94e4ff, #94e4ff, #94e4ff, #c799e6);
+    margin-left: 0; /* Supprime la marge à gauche */
+    margin-right: 0; /* Supprime la marge à droite */
+}
+.navbar-brand {
+    color: #4c067a;
+    font-weight: bold;
+    margin-left: 10%;
+}
+a.navbar-brand {
+    margin-left: 1%;
+}
+.navbar-dark .navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.navbar-nav .nav-link {
+    color: #4c067a;
+}
+
 h1,h2 {
     color: #94e4ff;
     font-weight: bold;
@@ -16,6 +37,10 @@ h1,h2 {
 h2{
     display: flex;
     justify-content: center;
+}
+h1{
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 p{
     color: #080808;
