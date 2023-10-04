@@ -116,12 +116,18 @@
     }
     
     .wave {
-        width: 100%; 
-        display: block;  /* Assure que le SVG est affiché en tant que bloc pour occuper toute la largeur */
         position: absolute;
         bottom: 0;
+        width: 100%;
+        z-index: 2;
     }
-
+    
+    .wave-bg {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        z-index: 1;
+    }
 
     .fileInput {
         color: #ffffff;
