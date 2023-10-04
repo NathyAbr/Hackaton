@@ -17,7 +17,7 @@
     body {
         height: 100%;
         width: 100%;
-        background-color: #ffffff;
+        background-color:white;
         overflow: hidden;
         position: relative;
     }
@@ -58,7 +58,7 @@
         background-color: white;
         height: 100px; /* Hauteur initiale */
         width: 12px;
-        margin: 0 20px;
+        margin: 0 15px;
         border-radius: 4px;
     }
     
@@ -66,7 +66,7 @@
         background-color: white;
         height: 155px; /* Plus grand que white-line1 */
         width: 12px;
-        margin: 0 20px;
+        margin: 0 15px;
         border-radius: 4px;
     }
     
@@ -74,7 +74,7 @@
         background-color: white;
         height: 220px; /* Le plus grand */
         width: 12px;
-        margin: 0 20px;
+        margin: 0 15px;
         border-radius: 4px;
     }
     
@@ -82,7 +82,7 @@
         background-color: white;
         height: 155px; /* Plus petit que white-line3 */
         width: 12px;
-        margin: 0 20px;
+        margin: 0 15px;
         border-radius: 4px;
     }
     
@@ -90,7 +90,7 @@
         background-color: white;
         height: 100px; /* Reviens à la hauteur initiale de white-line1 */
         width: 12px;
-        margin: 0 20px;
+        margin: 0 15px;
         border-radius: 4px;
     }
     
@@ -107,30 +107,28 @@
     
 
     .background {
-        position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
-        z-index: 1; /* Sous la div .musicnootjes */
+        height: 340px;
+        z-index: 1;
+        overflow: hidden;
     }
-
+    
     .wave {
         width: 100%; 
         display: block;  /* Assure que le SVG est affiché en tant que bloc pour occuper toute la largeur */
+        position: absolute;
+        bottom: 0;
     }
 
-    header nav ul {
-        list-style: none;
-        display: flex;
-        align-items: center;
-    }
-    
 
     .fileInput {
         color: #ffffff;
         display: block;
         width: 80vh;
         height: 6vh;
+        padding-top: 0.2%;
         padding-left: 5%;
         background-color: #334482;
         border: none;
@@ -151,9 +149,13 @@
         display: inline-block;
         color: #ffffff; /* couleur du texte */
         background-color: #334482;
-        border: none;
+        border: 20px;
+        border-color: #333333;
         border-radius: 30px;
-        padding: 8px;
+        padding-top: 15px;
+        padding-left: 5px;
+        font-weight: bold;
+        font-size: large;
     }
 
     #searchForm {
@@ -181,6 +183,7 @@
         height: 20%;
         z-index: 2; /* Empiler par-dessus la wave */
     }
+    
     
     .noot-1,
     .noot-2,
@@ -275,3 +278,255 @@
         border-radius: 2px;
         transform: skewY(-15deg)
        }  */
+
+       @media only screen and (max-width: 360px) {
+        /* styles CSS pour les écrans dont la largeur est inférieure ou égale à 600px */
+        .logo-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .logo {
+            background-color: #333333; 
+            width: 20vh; 
+            height:20vh; 
+            border-radius: 50%;
+            border: 5px solid rgb(255, 255, 255); /* Bordure de 10px en noir */
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Pour centrer les lignes */
+            box-sizing: border-box; /* Pour s'assurer que la bordure est incluse dans la largeur/hauteur totale */
+            padding: 0;
+        }
+        .cercle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #333333; 
+            width: 22vh; 
+            height:22vh;
+        }
+        .white-line1 {
+            background-color: white;
+            height: 60px; /* Hauteur initiale */
+            width: 6px;
+            margin: 0 7px;
+            border-radius: 4px;
+        }
+        
+        .white-line2 {
+            background-color: white;
+            height: 90px; /* Hauteur initiale */
+            width: 6px;
+            margin: 0 7px;
+            border-radius: 4px;
+        }
+        
+        .white-line3 {
+            background-color: white;
+            height: 120px; /* Hauteur initiale */
+            width: 6px;
+            margin: 0 7px;
+            border-radius: 4px;
+        }
+        
+        .white-line4 {
+            background-color: white;
+            height: 90px; /* Hauteur initiale */
+            width: 6px;
+            margin: 0 7px;
+            border-radius: 4px;
+        }
+        
+        .white-line5 {
+            background-color: white;
+            height: 60px; /* Hauteur initiale */
+            width: 6px;
+            margin: 0 7px;
+            border-radius: 4px;
+        }
+        
+        .brand {
+            color: #333333;
+            margin-top: 5%;  /* Ajustez cette valeur selon l'espacement que vous souhaitez entre le logo et le brand */
+        }
+        .line {
+            width: 200px;
+            height: 8px;
+            background-color: #333333;
+            border-radius: 5px; /* Cette valeur divise la hauteur pour obtenir un effet arrondi */
+        }
+        .fileInput {
+            color: #ffffff;
+            display: block;
+            width: 40vh;
+            height: 5vh;
+            padding-top: 2%;
+            padding-left: 3%;
+            background-color: #334482;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer; /* change le curseur pour indiquer que c'est cliquable */
+            outline: none; /* retire le contour par défaut lors de la sélection de l'input */
+            appearance: none; /* pour retirer l'apparence par défaut dans certains navigateurs */
+            -webkit-appearance: none; /* pour Chrome et Safari */
+            -moz-appearance: none; /* pour Firefox */
+        }
+    
+        .fileInput::-webkit-file-upload-button {
+            visibility: hidden; /* retire le bouton par défaut dans Chrome et Safari */
+        }
+    
+        .fileInput::before {
+            content: "Open file"; /* texte à afficher */
+            display: inline-block;
+            color: #ffffff; /* couleur du texte */
+            background-color: #334482;
+            border: none;
+            border-radius: 30px;
+            padding: 8px;
+        }
+    
+        #searchForm {
+            position: absolute;
+            top: 55%; /* Positionnez le formulaire légèrement en dessous du milieu vertical de la page */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+      }
+      @media only screen and (min-width: 360px) and (max-width: 915px) {
+        /* Ici, insérez les styles CSS que vous voulez appliquer pour les écrans entre 360px et 915px de largeur */
+        .logo-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .logo {
+            background-color: #333333; 
+            width: 20vh; 
+            height:20vh; 
+            border-radius: 50%;
+            border: 5px solid rgb(255, 255, 255); /* Bordure de 10px en noir */
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Pour centrer les lignes */
+            box-sizing: border-box; /* Pour s'assurer que la bordure est incluse dans la largeur/hauteur totale */
+            padding: 0;
+        }
+        .cercle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #333333; 
+            width: 22vh; 
+            height:22vh;
+        }
+        .white-line1 {
+            background-color: white;
+            height: 60px; /* Hauteur initiale */
+            width: 6px;
+            margin: 0 7px;
+            border-radius: 4px;
+        }
+        
+        .white-line2 {
+            background-color: white;
+            height: 90px; /* Hauteur initiale */
+            width: 6px;
+            margin: 0 7px;
+            border-radius: 4px;
+        }
+        
+        .white-line3 {
+            background-color: white;
+            height: 120px; /* Hauteur initiale */
+            width: 6px;
+            margin: 0 7px;
+            border-radius: 4px;
+        }
+        
+        .white-line4 {
+            background-color: white;
+            height: 90px; /* Hauteur initiale */
+            width: 6px;
+            margin: 0 7px;
+            border-radius: 4px;
+        }
+        
+        .white-line5 {
+            background-color: white;
+            height: 60px; /* Hauteur initiale */
+            width: 6px;
+            margin: 0 7px;
+            border-radius: 4px;
+        }
+        
+        .brand {
+            color: #333333;
+            margin-top: 5%;  /* Ajustez cette valeur selon l'espacement que vous souhaitez entre le logo et le brand */
+        }
+        .line {
+            width: 200px;
+            height: 8px;
+            background-color: #333333;
+            border-radius: 5px; /* Cette valeur divise la hauteur pour obtenir un effet arrondi */
+        }
+        .fileInput {
+            color: #ffffff;
+            display: block;
+            width: 40vh;
+            height: 5vh;
+            padding-top: 2%;
+            padding-left: 3%;
+            background-color: #334482;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer; /* change le curseur pour indiquer que c'est cliquable */
+            outline: none; /* retire le contour par défaut lors de la sélection de l'input */
+            appearance: none; /* pour retirer l'apparence par défaut dans certains navigateurs */
+            -webkit-appearance: none; /* pour Chrome et Safari */
+            -moz-appearance: none; /* pour Firefox */
+        }
+    
+        .fileInput::-webkit-file-upload-button {
+            visibility: hidden; /* retire le bouton par défaut dans Chrome et Safari */
+        }
+    
+        .fileInput::before {
+            content: "Open file"; /* texte à afficher */
+            display: inline-block;
+            color: #ffffff; /* couleur du texte */
+            background-color: #334482;
+            border: none;
+            border-radius: 30px;
+            padding: 8px;
+        }
+    
+        #searchForm {
+            position: absolute;
+            top: 55%; /* Positionnez le formulaire légèrement en dessous du milieu vertical de la page */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    }
+    
