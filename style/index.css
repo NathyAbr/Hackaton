@@ -4,11 +4,12 @@ body {
     background-color: #ffffff;
     margin: 0;
     padding: 0;
+    /* font-size: 2rem; */
 }
 .navbar {
-    background: linear-gradient(#94e4ff, #94e4ff, #94e4ff, #94e4ff, #c799e6);
-    margin-left: 0; /* Supprime la marge à gauche */
-    margin-right: 0; /* Supprime la marge à droite */
+    background: linear-gradient(#94e4ff , #c799e6);
+    margin-left: 0; 
+    margin-right: 0; 
 }
 .navbar-brand {
     color: #4c067a;
@@ -17,19 +18,35 @@ body {
 }
 a.navbar-brand {
     margin-left: 1%;
+    font-size: 2.5rem;
+
 }
 .navbar-dark .navbar-toggler-icon {
     background-color: #fff;
 }
 
 .navbar-nav .nav-link {
-    color: #4c067a;
+    color: #d3cdd7;
+    font-size: 2rem;
 }
+.row {
+    margin-left: 0;
+    margin-right: 0;
+    width:900px ,900px;
+}
+p {
+    font-size: 15rem;
+    width:900px ,900px;
 
+}
+div.col-md-8-d-flex-align-items-center {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 h1,h2 {
     color: #94e4ff;
     font-weight: bold;
-    background: linear-gradient(40deg, #c799e6, #94e4ff); /* Dégradé de couleur */
+    background: linear-gradient(10deg, #6c00b3, #e6c9f9, #e6c9f9, #06c1ff,#06c1ff, #94e4ff); /* Dégradé de couleur */
     -webkit-background-clip: text; /* Clip le dégradé sur le texte */
     color: transparent; /* Rend le texte transparent pour montrer le dégradé en arrière-plan */
     animation: bouger 2s ease-
@@ -41,6 +58,9 @@ h2{
 h1{
     margin-top: 1%;
     margin-bottom: 1%;
+}
+h3 {
+    color: #4c067a;
 }
 p{
     color: #080808;
@@ -72,8 +92,13 @@ footer {
     padding: 7em;
 }
 
+.img-fluid-mx-auto-d-block {
+    height: 550px;
+}
+
 .navbar {
-    background: linear-gradient(#94e4ff,#94e4ff,#94e4ff, #94e4ff,#c799e6); /* Dégradé de couleur */
+    background:#94e4ff 
+    /* Dégradé de couleur */
 }
 
 .navbar-dark .navbar-toggler-icon {
@@ -83,22 +108,47 @@ footer {
 .navbar-nav .nav-link {
     color: #4c067a; /* Couleur du texte pour les liens de navigation */
 }
-
+.nav-link:hover, .navbar-nav.navbar-nav:hover {
+    color: #0613ff; 
+ }
+ 
 .navbar-nav .nav-link:hover {
-    color: rgb(0, 0, 0); /* Couleur du texte pour les liens de navigation au survol */
+    color: rgb(251, 251, 251); /* Couleur du texte pour les liens de navigation au survol */
 }
 strong{
     color: #c799e6;
 }
+
 .card-body {
     background-color: #94e4ff;
     text-align: center;
-    color: #c799e6;
+    color: #5c0397;
+    font-weight: bold;
 }
 .footer {
-    background: linear-gradient(#c799e6,#94e4ff,#94e4ff,#94e4ff, #94e4ff); /* Dégradé de couleur */
+    background: linear-gradient(#94e4ff,#94e4ff, #94e4ff); /* Dégradé de couleur */
     padding: 25px 0; /* ajout d'un espace intérieur pour le contenu */
     position:fixed; /* position fixe au bas de la page */
     width: 100%; /* largeur à 100% de la page */
     bottom: 0; /* collé au bas de la page */
   }
+.container {
+    margin : none;
+    font-size: 1.6rem;
+}
+/* img.d-block {
+    margin-left: 9%;
+    width: 80%;
+    height: 100%;
+} */
+/* .carousel-control-prev-icon , .carousel-control-next-icon {
+    background-color: #4f007d;
+} */
+
+/* .carousel-control-next, .carousel-control-prev {
+   background-color: #4f007d;
+} */
+.d-block {
+    width: 80%;
+    height: 50%;
+}
