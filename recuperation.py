@@ -1,5 +1,7 @@
 from flask import Flask, request, render_template
-
+relative_path = "A_dim_2_0.wav"
+relative_path = "AVM.wav"
+relative_path = "5_-4_-3_-2_-1.wav"
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])

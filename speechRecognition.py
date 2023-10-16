@@ -1,5 +1,7 @@
 import speech_recognition as sr
-
+relative_path = "A_dim_2_0.wav"
+relative_path = "AVM.wav"
+relative_path = "5_-4_-3_-2_-1.wav"
 # Créez une instance du recognizer (reconnaissance vocale)
 recognizer = sr.Recognizer()
 

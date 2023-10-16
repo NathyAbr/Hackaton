@@ -1,6 +1,8 @@
 import pyaudio
 import wave
-
+relative_path = "A_dim_2_0.wav"
+relative_path = "AVM.wav"
+relative_path = "5_-4_-3_-2_-1.wav"
 CHUNK = 1024
 FORMAT = pyaudio.paInt16
 CHANNELS = 1
